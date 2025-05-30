@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3ac478cb-34af-4296-ac4a-b430fa22fbb1/resourceGroups/NNweb1_group/providers/Microsoft.Web/sites/NNweb1",
+    "appService.deploySubpath": "."
+}
