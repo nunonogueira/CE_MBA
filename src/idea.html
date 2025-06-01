@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estás a carregar o quê?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #ffe9f3 url('chupeta.png') no-repeat center top;
+      background-size: 220px;
+      background-attachment: fixed;
+      background-blend-mode: lighten;
+      color: #5e2b44;
+    }
+    header {
+      text-align: center;
+      padding: 6rem 1rem 2rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto 2rem;
+    }
+    .cta {
+      background: #ff4081;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background: #e73370;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .tiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .tile {
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      flex: 1 1 280px;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      min-height: 240px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+    }
+    .tile > * {
+      position: relative;
+      z-index: 1;
+    }
+    .tile h3 {
+      margin-top: 0;
+    }
+    footer {
+      background: #ffdaec;
+      color: #5e2b44;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Estás a carregar o quê?</h1>
+    <p>Evita ecrãs nos primeiros 2 anos. O teu bebé precisa de ti, não de tecnologia.</p>
+    <a class="cta" href="https://crescercomtempo.pt">Sabe mais</a>
+  </header>
+
+  <section class="section">
+    <div class="tiles">
+      <div class="tile" style="background-image: url('https://via.placeholder.com/600x400/ff99c8/ffffff?text=1000+Dias');">
+        <h3>1000 Dias Decisivos</h3>
+        <p>O cérebro do bebé desenvolve-se mais nos primeiros 1000 dias do que em toda a vida.</p>
+      </div>
+      <div class="tile" style="background-image: url('https://via.placeholder.com/600x400/fc608c/ffffff?text=Afeto');">
+        <h3>Afeto e Atenção</h3>
+        <p>É no contacto humano que o bebé constrói relações e emoções seguras.</p>
+      </div>
+      <div class="tile" style="background-image: url('https://via.placeholder.com/600x400/f06292/ffffff?text=Ecr%C3%A3s');">
+        <h3>Perigos dos Ecrãs</h3>
+        <p>O uso precoce de ecrãs pode interferir no sono, na linguagem e no vínculo afetivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Campanha Crescer com Tempo — Juntos por uma infância sem ecrãs
+  </footer>
+</body>
+</html>

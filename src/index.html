@@ -3,110 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estás a carregar o quê?</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <title>Crescer com Tempo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
-      font-family: 'Rubik', sans-serif;
-      background: linear-gradient(to bottom, #fef6f0, #fff);
-      color: #111;
+      font-family: 'Quicksand', sans-serif;
+      background: #ffe9f3;
+      color: #5e2b44;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background: url('img/chupeta.png') no-repeat top right;
+      background-size: contain;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 0;
-    }
-    header {
-      width: 100%;
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 2rem 1rem 1rem;
       text-align: center;
+      padding: 4rem 1rem 2rem;
+      position: relative;
       z-index: 1;
-      position: relative;
     }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      color: #222;
-    }
-    header p {
-      font-size: 1.3rem;
-      color: #555;
-      margin-top: 0.5rem;
-    }
-    .highlight {
-      font-weight: bold;
-      color: #e84f2f;
-    }
-    .hero-section {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .hero-section img {
-      max-width: 100%;
+    .hero img {
+      max-width: 280px;
       height: auto;
-      border-radius: 1rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-    .cta {
-      margin-top: 2rem;
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: background 0.3s ease;
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0 0.5rem;
     }
-    .cta:hover {
-      background: #e84f2f;
+    .hero span {
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      text-align: left;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #c2185b;
+    }
+    .card p {
+      margin-bottom: 0;
     }
     footer {
-      margin-top: auto;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #888;
       text-align: center;
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      header p {
-        font-size: 1.1rem;
-      }
-      .cta {
-        font-size: 1rem;
-        padding: 0.75rem 1.5rem;
-      }
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #ffdaec;
+      color: #5e2b44;
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
-  <header>
+  <section class="hero">
     <h1>Estás a carregar o quê?</h1>
-    <p><span class="highlight">Antes dos 2 anos</span>, o cérebro precisa de pessoas, não de pixels.</p>
-  </header>
+    <span>Antes dos 2 anos, o cérebro precisa de pessoas — não de pixels.</span>
+  </section>
 
-  <div class="hero-section">
-    <img src="post.png" alt="Campanha Estás a carregar o quê?">
-    <a class="cta" href="https://crescercomtempo.pt">Sabe mais em crescercomtempo.pt</a>
-  </div>
+  <section class="cards">
+    <div class="card">
+      <img src="img/card1.png" alt="Bebé com cérebro em desenvolvimento" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-top-left-radius: 12px; border-top-right-radius: 12px;">
+      <h3>1000 Dias Contam</h3>
+      <p>Durante os primeiros 1000 dias de vida, o cérebro da criança está em crescimento acelerado. Tudo conta: o olhar, o toque, a voz.</p>
+    </div>
+    <div class="card">
+      <img src="img/card2.png" alt="Família com menina de 2 anos" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-top-left-radius: 12px; border-top-right-radius: 12px;"> 
+      <h3>Afeto e Atenção</h3>
+      <p>É com o envolvimento direto dos pais que o cérebro do bebé aprende a confiar, a comunicar e a sentir-se seguro no mundo.</p>
+    </div>
+    <div class="card">
+      <img src="img/card3.png" alt="Evita ecrãs" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-top-left-radius: 12px; border-top-right-radius: 12px;"> 
+      <h3>Evita os Ecrãs</h3>
+      <p>O uso de dispositivos eletrónicos antes dos 2 anos está associado a atrasos na linguagem, no sono e na relação emocional.</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Campanha Crescer com Tempo</p>
+    &copy; 2025 Campanha Crescer com Tempo — Promovido com base em evidência científica
   </footer>
 </body>
 </html>
