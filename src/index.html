@@ -13,40 +13,29 @@
       color: #5e2b44;
       position: relative;
     }
-    body::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 300px;
-      background: url('img/chupeta.png') no-repeat top right;
-      background-size: contain;
-      opacity: 0.2;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 4rem 1rem 2rem;
+    .split-hero {
       position: relative;
-      z-index: 1;
+      display: flex;
+      justify-content: center1;
+      align-items: center;
+      min-height: 500px;
+      background: url('img/hero.png') no-repeat right center / cover;
+      padding: 4rem 2rem;
     }
-    .hero img {
-      max-width: 280px;
-      height: auto;
+    .text-side {
+      max-width: 500px;
+      background-color: rgba(255, 233, 243, 0.85);
+      padding: 2rem;
+      border-radius: 12px;
     }
-    .hero h1 {
+    .text-side h1 {
       font-size: 2.5rem;
-      margin: 1rem 0 0.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
     }
-    .hero span {
+    .text-side p {
       font-size: 1.2rem;
-      display: block;
-      margin-bottom: 2rem;
+      line-height: 1.6;
     }
     .cards {
       display: grid;
@@ -84,9 +73,11 @@
   </style>
 </head>
 <body>
-  <section class="hero">
-    <h1>Estás a carregar o quê?</h1>
-    <span>Antes dos 2 anos, o cérebro precisa de pessoas — não de pixels.</span>
+  <section class="split-hero">
+    <div class="text-side">
+      <h1>Estás a carregar<br>o quê?</h1>
+      <p>Antes dos 2 anos,<br>o cérebro precisa de<br>pessoas — não de pixels.</p>
+    </div>
   </section>
 
   <section class="cards">
@@ -101,7 +92,7 @@
       <p>É com o envolvimento direto dos pais que o cérebro do bebé aprende a confiar, a comunicar e a sentir-se seguro no mundo.</p>
     </div>
     <div class="card">
-      <img src="img/card3.png" alt="Evita ecrãs" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-top-left-radius: 12px; border-top-right-radius: 12px;"> 
+      <img src="img/card3.png" alt="Evitar ecrãs na infância" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-top-left-radius: 12px; border-top-right-radius: 12px;">
       <h3>Evita os Ecrãs</h3>
       <p>O uso de dispositivos eletrónicos antes dos 2 anos está associado a atrasos na linguagem, no sono e na relação emocional.</p>
     </div>
