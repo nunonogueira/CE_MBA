@@ -3,102 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Os Primeiros 1000 Dias Contam</title>
+  <title>Estás a carregar o quê?</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Rubik', sans-serif;
       margin: 0;
-      background: #fdfdfd;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(to bottom, #fef6f0, #fff);
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 0;
     }
     header {
-      background: #eafaf1;
-      padding: 2rem;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 2rem 1rem 1rem;
       text-align: center;
+      z-index: 1;
+      position: relative;
     }
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #2b7a4b;
+      font-size: 3rem;
+      margin: 0;
+      color: #222;
     }
     header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
+      font-size: 1.3rem;
+      color: #555;
+      margin-top: 0.5rem;
     }
-    section {
-      padding: 3rem 1rem;
-      max-width: 800px;
-      margin: auto;
+    .highlight {
+      font-weight: bold;
+      color: #e84f2f;
     }
-    .info-box {
-      background: #ffffff;
-      border-left: 6px solid #4caf50;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    .hero-section {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .info-box h2 {
-      margin-top: 0;
-      color: #2b7a4b;
+    .hero-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
     .cta {
-      background: #4caf50;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .cta h2 {
-      margin: 0 0 1rem;
-    }
-    .cta a {
-      background: white;
-      color: #4caf50;
-      text-decoration: none;
-      padding: 0.75rem 1.5rem;
+      margin-top: 2rem;
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
       border-radius: 5px;
+      text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+    .cta:hover {
+      background: #e84f2f;
     }
     footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
+      margin-top: auto;
       padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1.1rem;
+      }
+      .cta {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Os Primeiros 1000 Dias Contam</h1>
-    <p>Nos primeiros dois anos de vida, o cérebro de uma criança cresce mais do que em qualquer outra fase. O contacto humano é insubstituível.</p>
+    <h1>Estás a carregar o quê?</h1>
+    <p><span class="highlight">Antes dos 2 anos</span>, o cérebro precisa de pessoas, não de pixels.</p>
   </header>
 
-  <section>
-    <div class="info-box">
-      <h2>“1h de ecrã por dia pode atrasar o desenvolvimento da fala.”</h2>
-      <p>Estudos indicam que a exposição prolongada a ecrãs pode afetar a linguagem, o sono e o comportamento. O que parece inofensivo pode ter impacto a longo prazo.</p>
-    </div>
-
-    <div class="info-box">
-      <h2>O que fazer em vez de dar o telemóvel?</h2>
-      <p>Brincadeiras simples, olhar nos olhos, falar com o bebé, contar histórias, dar tempo de qualidade. Estas são as verdadeiras "apps" que estimulam o cérebro.</p>
-    </div>
-
-    <div class="info-box">
-      <h2>O que dizem os especialistas?</h2>
-      <p>Organizações como a <strong>OMS</strong> e a <strong>Sociedade Portuguesa de Pediatria</strong> recomendam zero tempo de ecrã para crianças dos 0 aos 2 anos.</p>
-    </div>
-  </section>
-
-  <div class="cta">
-    <h2>Partilha esta mensagem.</h2>
-    <a href="#">#CrescerSemEcras</a>
+  <div class="hero-section">
+    <img src="post.png" alt="Campanha Estás a carregar o quê?">
+    <a class="cta" href="https://crescercomtempo.pt">Sabe mais em crescercomtempo.pt</a>
   </div>
 
   <footer>
-    <p>&copy; 2025 Campanha "Os Primeiros 1000 Dias Contam". Com base em evidência científica.</p>
+    <p>&copy; 2025 Campanha Crescer com Tempo</p>
   </footer>
 </body>
 </html>
